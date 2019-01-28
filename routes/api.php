@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/game/new/{id}', 'GameController@new');
+
+Route::get('/game/process/{hash}', 'GameController@status');
+
+Route::get('/game/move/{hash}/{move}', 'GameController@move');
