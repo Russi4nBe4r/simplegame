@@ -32,6 +32,6 @@ class ApiAuthController extends Controller
 			
 			}
 		}
-		return '403';
+		return abort('403');
 	}
 }
