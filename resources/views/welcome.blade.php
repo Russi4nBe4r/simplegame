@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    dev.simplegame.buhojmedved
                 </div>
 
                 <div class="links">
