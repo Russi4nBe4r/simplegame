@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/v1', function() { return "Hello, World"; });
 
 Route::post('/v1/auth', 'ApiAuthController@index');
+
+Route::middleware('token')->post('/v1/users', 'GameController@users');
